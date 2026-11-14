@@ -1,54 +1,53 @@
-# Engineering Data Science Portfolio
+# Engineering Notebooks
 
-Collection of data science and chemical engineering notebooks demonstrating practical applications of Python, data analysis, and process modeling.
+Python notebooks on process modeling, numerical methods and data analysis.
 
-## 📁 Project Categories
+## About this repository
 
-### Chemical Engineering
-- **[Simulation of Methane Fermentation (ADM1)](chemical-engineering/adm1-methane-fermentation.ipynb)** - Bioprocess simulation using the ADM1 model with 27 differential equations
-- **[Semibatch Reactor Balance](chemical-engineering/semibatch-reactor-balance.ipynb)** - Mass balance calculations for chemical reactor systems
+I am a process engineer (Warsaw University of Technology) working on hydraulic models of water and sewer networks. This repository is my workshop: I take a problem, write down the physics or mathematics behind it, solve it in Python and check whether the result makes sense.
 
-### Data Collection
-- **[IMGW Weather Archive](data-collection/imgw-data-downloader.ipynb)** - Automated data scraping from Polish meteorological institute
+The notebooks show how I work:
 
-### Data Visualization
-- **[Heart Disease Dataset](data-visualization/heart-disease-visualization.ipynb)** - Exploratory visualization of cardiovascular disease indicators
-- **[California Traffic Collision](data-visualization/traffic-collision-sql-geospatial.ipynb)** - SQL queries and geospatial analysis using Folium
+- turning a physical or biological process into equations and solving them numerically,
+- collecting, cleaning and analysing real measurement data,
+- understanding the methods I use, from statistics and machine learning to vector calculus.
 
-### Machine Learning
-- **[Iris Dataset Classification](machine-learning/iris-classification-cross-validation.ipynb)** - Cross-validation methodology with multiple classifiers
-- **[Review of Basic ML Algorithms](machine-learning/ml-algorithms-overview.ipynb)** - Comparison of fundamental machine learning algorithms
-- **[Weather Prediction](machine-learning/weather-prediction-regression.ipynb)** - Regression models for meteorological forecasting
+Many topics are close to my professional field: wastewater treatment, rainfall and river data, flows.
 
-### Mathematics
-- **[Coefficient of Determination](mathematics/coefficient-of-determination.ipynb)** - Statistical correlation and R² calculation
-- **[Complex Numbers](mathematics/complex-numbers.ipynb)** - Complex number operations and visualization
-- **[Differential Operators](mathematics/differential-operators.ipynb)** - Gradient, divergence, and curl using SymPy
+These are learning and exploration notebooks, not production software. I wrote them myself, line by line, during self-study in 2021–2023 (textbooks and online courses, including Coursera), before AI coding assistants existed. In 2026 I collected them here and reviewed them for bugs and terminology.
 
-## 🛠️ Technologies
+## Projects
 
-- **Python 3.x**
-- **Data Analysis:** pandas, NumPy
-- **Visualization:** matplotlib, seaborn, Folium
-- **Machine Learning:** scikit-learn
-- **Scientific Computing:** SciPy, SymPy
-- **Databases:** SQLite
+### Process modeling
 
-## 📊 About the Notebooks
+- **[Methane fermentation (ADM1)](chemical-engineering/adm1-methane-fermentation.ipynb)**: anaerobic digestion of wastewater sludge with ADM1, the IWA standard model for anaerobic digesters (27 differential equations, stiff solver LSODA in SciPy). Substrates, intermediates, biomass and biogas flow over time.
+- **[Semibatch reactor](chemical-engineering/semibatch-reactor-balance.ipynb)**: coupled mass and energy balance of a semibatch reactor with reactant dosing. Isothermal operation compared with no cooling under an exothermic reaction.
 
-These notebooks were developed during self-taught learning (2021-2023) and demonstrate:
-- Practical problem-solving approaches
-- Data cleaning and preprocessing
-- Statistical analysis and visualization
-- Machine learning model evaluation
-- Chemical process modeling
+### Data collection and analysis
 
-**Note:** Datasets are not included in this repository. Data sources are referenced directly in each notebook.
+- **[IMGW weather archive](data-collection/imgw-data-downloader.ipynb)**: automated download of archived hydrological and meteorological data from IMGW-PIB (water levels, flows, precipitation, temperature, wind) for a chosen period and set of parameters. Public data of the kind used as input for urban drainage and river models.
+- **[Weather prediction](machine-learning/weather-prediction-regression.ipynb)**: predicting visibility from temperature, humidity, pressure, time of day and precipitation. Data cleaning, one-hot encoding of weather phenomena and scaling, then a neural network compared with a random forest.
+- **[California traffic collisions](data-visualization/traffic-collision-sql-geospatial.ipynb)**: SQL queries on the SWITRS SQLite database (aggregations, subqueries, date functions), a county-level choropleth map in Folium and Plotly charts.
 
-## 📬 Contact
+## Foundations
 
-For questions or collaboration: krystian.molenda@outlook.com
+Shorter notebooks on statistics, machine learning and mathematics, partly from coursework: the groundwork behind the projects above.
 
----
+- **[Heart disease data](data-visualization/heart-disease-visualization.ipynb)**: exploratory analysis of categorical and numerical features. Associations between categorical features measured with Cramér's V, separately for patients with lower and higher heart attack risk.
+- **[Overview of ML algorithms](machine-learning/ml-algorithms-overview.ipynb)**: seven algorithms on simple data, covering classification (k-NN, naive Bayes, decision tree), regression (linear, polynomial), clustering (k-means) and anomaly detection (One-Class SVM).
+- **[Iris classification](machine-learning/iris-classification-cross-validation.ipynb)**: decision tree, k-NN, SVM and a neural network compared with repeated k-fold cross-validation.
+- **[Coefficient of determination](mathematics/coefficient-of-determination.ipynb)**: R² calculated from its definition in NumPy, including the case of three variables. Logarithmic and quadratic relationships are linearized and the results are checked against scikit-learn.
+- **[Complex numbers](mathematics/complex-numbers.ipynb)**: algebraic and trigonometric forms, arithmetic, powers and roots (de Moivre's formula), visualized on the complex plane.
+- **[Differential operators](mathematics/differential-operators.ipynb)**: gradient, divergence and curl calculated symbolically with SymPy and plotted as vector fields.
 
-*Portfolio organized on GitHub: January 2025*
+## Tools
+
+Python · NumPy, pandas · SciPy, SymPy · scikit-learn · matplotlib, seaborn, Plotly, Folium · SQLite
+
+## Data
+
+Datasets are not included in the repository. Each notebook links to its data source.
+
+## Contact
+
+krystian.molenda@outlook.com
