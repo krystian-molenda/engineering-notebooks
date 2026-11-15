@@ -20,25 +20,25 @@ These are learning and exploration notebooks, not production software. I wrote t
 
 ### Process modeling
 
-- **[Methane fermentation (ADM1)](chemical-engineering/adm1-methane-fermentation.ipynb)**: anaerobic digestion of wastewater sludge with ADM1, the IWA standard model for anaerobic digesters (27 differential equations, stiff solver LSODA in SciPy). Substrates, intermediates, biomass and biogas flow over time.
-- **[Semibatch reactor](chemical-engineering/semibatch-reactor-balance.ipynb)**: coupled mass and energy balance of a semibatch reactor with reactant dosing. Isothermal operation compared with no cooling under an exothermic reaction.
+- **[Methane fermentation (ADM1)](projects/adm1-methane-fermentation.ipynb)**: anaerobic digestion of wastewater sludge with ADM1, the IWA standard model for anaerobic digesters (27 differential equations, stiff solver LSODA in SciPy). Substrates, intermediates, biomass and biogas flow over time.
+- **[Semibatch reactor](projects/semibatch-reactor-balance.ipynb)**: coupled mass and energy balance of a semibatch reactor with reactant dosing. Isothermal operation compared with no cooling under an exothermic reaction.
 
 ### Data collection and analysis
 
-- **[IMGW weather archive](data-collection/imgw-data-downloader.ipynb)**: automated download of archived hydrological and meteorological data from IMGW-PIB (water levels, flows, precipitation, temperature, wind) for a chosen period and set of parameters. Public data of the kind used as input for urban drainage and river models.
-- **[Weather prediction](machine-learning/weather-prediction-regression.ipynb)**: predicting visibility from temperature, humidity, pressure, time of day and precipitation. Data cleaning, one-hot encoding of weather phenomena and scaling, then a neural network compared with a random forest.
-- **[California traffic collisions](data-visualization/traffic-collision-sql-geospatial.ipynb)**: SQL queries on the SWITRS SQLite database (aggregations, subqueries, date functions), a county-level choropleth map in Folium and Plotly charts.
+- **[IMGW weather archive](projects/imgw-data-downloader.ipynb)**: automated download of archived hydrological and meteorological data from IMGW-PIB (water levels, flows, precipitation, temperature, wind) for a chosen period and set of parameters. Public data of the kind used as input for urban drainage and river models.
+- **[Weather prediction](projects/weather-prediction-regression.ipynb)**: predicting visibility from temperature, humidity, pressure, time of day and precipitation. Data cleaning, one-hot encoding of weather phenomena and scaling, then a neural network compared with a random forest.
+- **[California traffic collisions](projects/traffic-collision-sql-geospatial.ipynb)**: SQL queries on the SWITRS SQLite database (aggregations, subqueries, date functions), a county-level choropleth map in Folium and Plotly charts.
 
 ## Foundations
 
 Shorter notebooks on statistics, machine learning and mathematics, partly from coursework: the groundwork behind the projects above.
 
-- **[Heart disease data](data-visualization/heart-disease-visualization.ipynb)**: exploratory analysis of categorical and numerical features. Associations between categorical features measured with Cramér's V, separately for patients with lower and higher heart attack risk.
-- **[Overview of ML algorithms](machine-learning/ml-algorithms-overview.ipynb)**: seven algorithms on simple data, covering classification (k-NN, naive Bayes, decision tree), regression (linear, polynomial), clustering (k-means) and anomaly detection (One-Class SVM).
-- **[Iris classification](machine-learning/iris-classification-cross-validation.ipynb)**: decision tree, k-NN, SVM and a neural network compared with repeated k-fold cross-validation.
-- **[Coefficient of determination](mathematics/coefficient-of-determination.ipynb)**: R² calculated from its definition in NumPy, including the case of three variables. Logarithmic and quadratic relationships are linearized and the results are checked against scikit-learn.
-- **[Complex numbers](mathematics/complex-numbers.ipynb)**: algebraic and trigonometric forms, arithmetic, powers and roots (de Moivre's formula), visualized on the complex plane.
-- **[Differential operators](mathematics/differential-operators.ipynb)**: gradient, divergence and curl calculated symbolically with SymPy and plotted as vector fields.
+- **[Heart disease data](foundations/heart-disease-visualization.ipynb)**: exploratory analysis of categorical and numerical features. Associations between categorical features measured with Cramér's V, separately for patients with lower and higher heart attack risk.
+- **[Overview of ML algorithms](foundations/ml-algorithms-overview.ipynb)**: seven algorithms on simple data, covering classification (k-NN, naive Bayes, decision tree), regression (linear, polynomial), clustering (k-means) and anomaly detection (One-Class SVM).
+- **[Iris classification](foundations/iris-classification-cross-validation.ipynb)**: decision tree, k-NN, SVM and a neural network compared with repeated k-fold cross-validation.
+- **[Coefficient of determination](foundations/coefficient-of-determination.ipynb)**: R² calculated from its definition in NumPy, including the case of three variables. Logarithmic and quadratic relationships are linearized and the results are checked against scikit-learn.
+- **[Complex numbers](foundations/complex-numbers.ipynb)**: algebraic and trigonometric forms, arithmetic, powers and roots (de Moivre's formula), visualized on the complex plane.
+- **[Differential operators](foundations/differential-operators.ipynb)**: gradient, divergence and curl calculated symbolically with SymPy and plotted as vector fields.
 
 ## Tools
 
